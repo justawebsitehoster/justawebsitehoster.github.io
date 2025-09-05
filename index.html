@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>EPIC SMP — Vanilla+ Survival</title>
-  <meta name="description" content="EPIC SMP — A premium Vanilla+ Survival experience with Economy, Shops and Quality of Life additions. IP: epicsmp.online" />
+  <meta name="description" content="EPIC SMP — A premium Vanilla+ Survival experience with Economy, Shops and Quality of Life additions. IP: play.epicsmp.live" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -110,11 +110,6 @@
     .section-label{display:inline-flex; gap:10px; align-items:center; font-weight:800; text-transform:uppercase; letter-spacing:.2em; opacity:.7; margin-bottom:20px}
     .dot{width:8px; height:8px; border-radius:50%; background:var(--accent-5)}
 
-    /* Store mock */
-    .store-card{padding:24px}
-    .price{font-size:36px; font-weight:800}
-    .badge{display:inline-block; padding:6px 10px; border-radius:999px; border:1px solid rgba(255,255,255,.15); opacity:.8}
-
     /* FAQ */
     details{background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.08); border-radius:12px; padding:16px 18px}
     details+details{margin-top:10px}
@@ -147,7 +142,6 @@
       <div class="spacer"></div>
       <nav class="nav-links">
         <a href="#features">Features</a>
-        <a href="#store">Store</a>
         <a href="#rules">Rules</a>
         <a href="#faq">FAQ</a>
         <a href="#join">Join</a>
@@ -162,18 +156,18 @@
       <div>
         <div class="section-label"><span class="dot"></span> Vanilla+ Survival</div>
         <h1 class="title-xl">A premium Minecraft experience — simple, social, <span style="background:linear-gradient(120deg,var(--accent-5),var(--accent-7),var(--accent-3)); -webkit-background-clip:text; color:transparent">EPIC</span>.</h1>
-        <p class="lead">Exactly how survival should feel — community driven, with an Economy, Player Shops and polished Quality‑of‑Life tweaks. No pay‑to‑win. No clutter. Just good vibes.</p>
+        <p class="lead">Exactly how survival should feel — community driven, with an Economy, Server Shop and polished Quality‑of‑Life tweaks. No pay‑to‑win. No clutter. Just good vibes.</p>
 
         <div class="chips">
           <span class="chip">Java Edition</span>
-          <span class="chip">1.20+ Compatible</span>
+          <span class="chip">1.21+ Compatible</span>
           <span class="chip">Economy</span>
-          <span class="chip">Player Shops</span>
+          <span class="chip">Server Shops</span>
           <span class="chip">QoL Only</span>
         </div>
 
         <div class="ip-box gradient-border" style="margin-top:6px">
-          <strong class="ip" id="ip">epicsmp.online</strong>
+          <strong class="ip" id="ip">play.epicsmp.live</strong>
           <button class="btn btn-outline" onclick="copyIP()">Copy IP</button>
           <button class="btn btn-primary" onclick="smoothScroll('#join')">Join Now</button>
         </div>
@@ -192,9 +186,6 @@
               <div style="font-size:12px; opacity:.7;">PLAYERS</div>
               <div id="players">—</div>
             </div>
-          </div>
-          <button class="btn btn-outline" style="width:100%; margin-top:14px" onclick="checkStatus()">Check Server Status</button>
-        </div>
       </div>
     </div>
   </main>
@@ -219,37 +210,6 @@
           <h3>Chill & Social</h3>
           <p class="lead">Friendly moderation, seasonal events and Discord integration. It’s about the journey with friends, not speedrunning an endgame.</p>
         </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ====== STORE (placeholder) ====== -->
-  <section id="store">
-    <div class="wrap">
-      <h2 class="section-label"><span class="dot"></span> Store</h2>
-      <p class="lead">Support the server and unlock tasteful cosmetics. No competitive advantages — ever. Hook these buttons to your webstore when ready.</p>
-      <div class="grid-3 reveal">
-        <div class="card store-card tilt">
-          <span class="badge">Rank</span>
-          <h3>VIP</h3>
-          <p>Chat flair, /hat, particle trails and extra homes.</p>
-          <div class="price">$9.99</div>
-          <button class="btn btn-primary" onclick="comingSoon()">Purchase</button>
-        </div>
-        <div class="card store-card tilt">
-          <span class="badge">Cosmetic</span>
-          <h3>Crate Keys</h3>
-          <p>Seasonal crates with purely visual rewards and fun collectibles.</p>
-          <div class="price">$3.99</div>
-          <button class="btn btn-primary" onclick="comingSoon()">Purchase</button>
-        </div>
-        <div class="card store-card tilt">
-          <span class="badge">Bundle</span>
-          <h3>Starter Pack</h3>
-          <p>VIP + name color + a handful of keys. Great value.</p>
-          <div class="price">$14.99</div>
-          <button class="btn btn-primary" onclick="comingSoon()">Purchase</button>
-        </div>
       </div>
     </div>
   </section>
@@ -297,7 +257,7 @@
       <h2 class="section-label"><span class="dot"></span> Join the World</h2>
       <div class="card reveal" style="padding:28px; display:grid; gap:16px; align-items:center; grid-template-columns:1.1fr .9fr">
         <div>
-          <h3 style="margin-top:0">IP: <span class="ip">epicsmp.online</span></h3>
+          <h3 style="margin-top:0">IP: <span class="ip">play.epicsmp.live</span></h3>
           <p class="lead">Open Minecraft → Multiplayer → Direct Connect → Paste the IP. See you in spawn!</p>
           <div class="cta">
             <button class="btn btn-primary" onclick="copyIP()">Copy IP</button>
@@ -319,7 +279,6 @@
       <div>© <span id="year"></span> EPIC SMP • Vanilla+ Survival</div>
       <div class="footer-links">
         <a href="#top">Home</a>
-        <a href="#store">Store</a>
         <a href="#rules">Rules</a>
         <a href="#faq">FAQ</a>
       </div>
@@ -346,12 +305,10 @@
     // ====== Copy IP ======
     const toast = document.getElementById('toast');
     async function copyIP(){
-      try{await navigator.clipboard.writeText('epicsmp.online'); showToast('IP copied: epicsmp.online');}
-      catch(e){showToast('epicsmp.online');}
+      try{await navigator.clipboard.writeText('play.epicsmp.live'); showToast('IP copied: play.epicsmp.live');}
+      catch(e){showToast('play.epicsmp.live');}
     }
-    function comingSoon(){showToast('Hook this button to your Tebex/Store URL ✨');}
-    function showToast(text){ toast.textContent=text; toast.classList.add('show'); setTimeout(()=>toast.classList.remove('show'), 1600); }
-
+    
     // ====== Stars BG ======
     const c=document.getElementById('stars'),x=c.getContext('2d'); let W, H, S=[];
     function resize(){W=c.width=innerWidth; H=c.height=innerHeight; S = Array.from({length: Math.min(250, Math.floor(W*H/9000))}, () => ({x:Math.random()*W, y:Math.random()*H, z:Math.random()*1.5+.2, a:Math.random()}));}
@@ -370,7 +327,7 @@
       text.textContent = 'Checking…'; dot.style.background='gold';
       try{
         // Public API; may be blocked by CORS depending on host. That’s okay — we degrade nicely.
-        const r = await fetch('https://api.mcsrvstat.us/3/epicsmp.online', {mode:'cors'});
+        const r = await fetch('https://api.mcsrvstat.us/3/play.epicsmp.live', {mode:'cors'});
         const j = await r.json();
         if(j && j.online){
           dot.style.background='var(--ok)'; text.textContent='Online'; players.textContent = j.players?.online + ' / ' + j.players?.max;
@@ -384,6 +341,9 @@
 
     // ====== Year ======
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Automatically check status on page load
+checkStatus();
   </script>
 </body>
 </html>
