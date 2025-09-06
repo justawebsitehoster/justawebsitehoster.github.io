@@ -3,10 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>EPIC SMP — Vanilla+ Survival</title>
-  <meta name="description" content="EPIC SMP — A premium Vanilla+ Survival experience with Economy, Shops and Quality of Life additions. IP: play.epicsmp.live" />
+  <title>EPIC SMP</title>
+  <meta name="description" content="EPIC SMP — A premium Vanilla+ Survival experience with Economy, Shops and Quality of Life additions." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/x-icon" href="epic-smp-logo.png">
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
   <style>
     :root{
@@ -74,14 +75,15 @@
       border-radius:var(--radius-2); box-shadow:var(--shadow);
     }
 
-    .title-xl{font-size: clamp(36px, 5vw, 64px); font-weight:800; line-height:1.05; letter-spacing:.2px}
+    .title-xl{font-size: clamp(36px, 5vw, 59px); font-weight:800; line-height:1.05; letter-spacing:.2px}
     .lead{font-size: clamp(16px, 2vw, 20px); color:var(--muted)}
+    .lead2{font-size: clamp(23px, 2vw, 20px); color:var(--muted)}
 
     .chips{display:flex; flex-wrap:wrap; gap:10px; margin:16px 0 30px}
     .chip{padding:8px 12px; border-radius:999px; background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.1); font-weight:600; font-size:14px}
 
     .cta{display:flex; flex-wrap:wrap; gap:12px; margin-top:24px}
-    .btn{appearance:none; border:none; cursor:pointer; font-weight:700; letter-spacing:.3px; border-radius:14px; padding:14px 18px; transition:transform .2s ease, box-shadow .2s ease, opacity .15s ease}
+    .btn{appearance:none; border:none; cursor:pointer; font-weight:700; letter-spacing:.3px; border-radius:14px; padding:14px 18px; text-decoration:none; transition:transform .2s ease, box-shadow .2s ease, opacity .15s ease}
     .btn:hover{transform:translateY(-2px)}
     .btn:active{transform:translateY(0)}
     .btn-primary{color:#0d0f1a; background:linear-gradient(120deg, var(--accent-5), var(--accent-7) 55%, var(--accent-3)); box-shadow:0 10px 25px rgba(105,152,255,.35)}
@@ -144,7 +146,7 @@
         <a href="#features">Features</a>
         <a href="#rules">Rules</a>
         <a href="#faq">FAQ</a>
-        <a href="#join">Join</a>
+        <a href="#join"><span style="background:linear-gradient(120deg,var(--accent-5),var(--accent-7),var(--accent-3)); -webkit-background-clip:text; color:transparent">Join</span></a>
       </nav>
       <button class="menu-btn" aria-label="Open menu" onclick="toggleMenu()">☰</button>
     </div>
@@ -154,9 +156,9 @@
   <main id="top" class="wrap hero">
     <div class="hero-grid">
       <div>
-        <div class="section-label"><span class="dot"></span> Vanilla+ Survival</div>
-        <h1 class="title-xl">A premium Minecraft experience — simple, social, <span style="background:linear-gradient(120deg,var(--accent-5),var(--accent-7),var(--accent-3)); -webkit-background-clip:text; color:transparent">EPIC</span>.</h1>
-        <p class="lead">Exactly how survival should feel — community driven, with an Economy, Server Shop and polished Quality‑of‑Life tweaks. No pay‑to‑win. No clutter. Just good vibes.</p>
+        <div class="section-label"><span class="dot"></span> EPIC Survival Multiplayer</div>
+        <h1 class="title-xl">A refreshing Minecraft experience — simple, social, <span style="background:linear-gradient(120deg,var(--accent-5),var(--accent-7),var(--accent-3)); -webkit-background-clip:text; color:transparent">EPIC</span>!</h1>
+        <p class="lead">Community driven with an Economy, Server Shop and Quality‑of‑Life tweaks. No pay‑to‑win. No large clutter. Just good times.</p>
 
         <div class="chips">
           <span class="chip">Java Edition</span>
@@ -164,12 +166,6 @@
           <span class="chip">Economy</span>
           <span class="chip">Server Shops</span>
           <span class="chip">QoL Only</span>
-        </div>
-
-        <div class="ip-box gradient-border" style="margin-top:6px">
-          <strong class="ip" id="ip">play.epicsmp.live</strong>
-          <button class="btn btn-outline" onclick="copyIP()">Copy IP</button>
-          <button class="btn btn-primary" onclick="smoothScroll('#join')">Join Now</button>
         </div>
       </div>
 
@@ -197,18 +193,18 @@
       <div class="grid-3 reveal">
         <article class="card feature tilt">
           <div class="tag">Vanilla+</div>
-          <h3>Pure Survival, Polished</h3>
-          <p class="lead">We keep the heart of Minecraft intact and add only what improves the everyday grind: homes, tpa, sleep‑vote and quality‑of‑life fixes.</p>
+          <h3>Enhanced Survival</h3>
+          <p class="lead">We keep the heart of Minecraft intact and add only what improves the everyday grind: homes, tpa, flight and quality‑of‑life fixes.</p>
         </article>
         <article class="card feature tilt">
           <div class="tag">Economy</div>
           <h3>Player‑Driven Economy</h3>
-          <p class="lead">Earn in‑game money, trade with others and build thriving <strong>player shops</strong>. No pay‑to‑win boosts — progress is earned.</p>
+          <p class="lead">Earn in‑game money, trade with others and build thriving communities. No pay‑to‑win boosts — progress is earned, never bought.</p>
         </article>
         <article class="card feature tilt">
           <div class="tag">Community</div>
           <h3>Chill & Social</h3>
-          <p class="lead">Friendly moderation, seasonal events and Discord integration. It’s about the journey with friends, not speedrunning an endgame.</p>
+          <p class="lead">Friendly moderation and Discord integrations. It’s about the journey with friends, not speedrunning an endgame.</p>
         </article>
       </div>
     </div>
@@ -237,15 +233,15 @@
       <div class="reveal">
         <details open>
           <summary>What version do I need?</summary>
-          <p>We target the latest stable release of Minecraft Java. Minor versions are usually supported. If something breaks after an update, we patch fast.</p>
+          <p>You can join on any version 1.21.5+ <strong>however</strong> it is strongly recommended to stick with the latest releases.</p>
         </details>
         <details>
           <summary>Is it pay‑to‑win?</summary>
-          <p>No. Our store sells cosmetics and conveniences only. Gameplay power is earned in‑game.</p>
+          <p>No. Everything is ran and funded individually and there are no purchases that can be made at all for the server</p>
         </details>
         <details>
           <summary>Do you have a Discord?</summary>
-          <p>Yes! Replace the link below with your invite and you’re set.</p>
+          <p>Yes! The server runs through and relies on the Discord server to work so be sure to join it so you can hop into the action!</p>
         </details>
       </div>
     </div>
@@ -254,21 +250,14 @@
   <!-- ====== JOIN ====== -->
   <section id="join">
     <div class="wrap">
-      <h2 class="section-label"><span class="dot"></span> Join the World</h2>
-      <div class="card reveal" style="padding:28px; display:grid; gap:16px; align-items:center; grid-template-columns:1.1fr .9fr">
+      <h2 class="section-label"><span class="dot"></span> How To Join The Server</h2>
+      <div class="card reveal" style="padding:28px;">
         <div>
-          <h3 style="margin-top:0">IP: <span class="ip">play.epicsmp.live</span></h3>
-          <p class="lead">Open Minecraft → Multiplayer → Direct Connect → Paste the IP. See you in spawn!</p>
+          <p class="lead2">Join The Discord ‎ →‎  ‎ Verify Within The Discord ‎ →‎  ‎ Scroll Down To join-minecraft-server ‎ →‎  ‎ Follow Those Instructions To Be Automatically Whitelisted!</p>
           <div class="cta">
-            <button class="btn btn-primary" onclick="copyIP()">Copy IP</button>
-            <a class="btn btn-outline" href="#" onclick="alert('Replace this with your Discord invite URL.'); return false;">Join Discord</a>
+            <a class="btn btn-outline" href="https://discord.gg/hzXkX9XvhU" target="_blank" rel="noopener noreferrer">Join Discord</a>
           </div>
         </div>
-        <div class="gradient-border card" style="padding:20px">
-          <video playsinline autoplay muted loop style="width:100%; border-radius:12px">
-            <source src="" type="video/mp4">
-          </video>
-          <div style="text-align:center; opacity:.7; font-size:14px; padding-top:8px">Drop a short server showcase video here.</div>
         </div>
       </div>
     </div>
@@ -276,7 +265,7 @@
 
   <footer>
     <div class="wrap" style="display:flex; flex-wrap:wrap; align-items:center; gap:14px; justify-content:space-between">
-      <div>© <span id="year"></span> EPIC SMP • Vanilla+ Survival</div>
+      <div>© <span id="year"></span> EPIC SMP</div>
       <div class="footer-links">
         <a href="#top">Home</a>
         <a href="#rules">Rules</a>
@@ -300,13 +289,6 @@
     function smoothScroll(sel){
       const el = document.querySelector(sel);
       if(!el) return; window.scrollTo({top:el.offsetTop-70, behavior:'smooth'});
-    }
-
-    // ====== Copy IP ======
-    const toast = document.getElementById('toast');
-    async function copyIP(){
-      try{await navigator.clipboard.writeText('play.epicsmp.live'); showToast('IP copied: play.epicsmp.live');}
-      catch(e){showToast('play.epicsmp.live');}
     }
     
     // ====== Stars BG ======
